@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en" dir="auto" data-theme="auto">
 
-<head><meta charset="utf-8">
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script><meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta name="robots" content="index, follow">
@@ -9,16 +9,16 @@
 <meta name="keywords" content="">
 <meta name="description" content="1. Transformer 的核心：缩放点积注意力机制 (Scaled Dot-Product Attention)">
 <meta name="author" content="你的名字">
-<link rel="canonical" href="https://chaohongguo.github.io/posts/my-second-post/">
+<link rel="canonical" href="http://localhost:1313/posts/my-second-post/">
 <link crossorigin="anonymous" href="/assets/css/stylesheet.css" rel="preload stylesheet" as="style">
-<link rel="icon" href="https://chaohongguo.github.io/favicon.ico">
-<link rel="icon" type="image/png" sizes="16x16" href="https://chaohongguo.github.io/favicon-16x16.png">
-<link rel="icon" type="image/png" sizes="32x32" href="https://chaohongguo.github.io/favicon-32x32.png">
-<link rel="apple-touch-icon" href="https://chaohongguo.github.io/apple-touch-icon.png">
-<link rel="mask-icon" href="https://chaohongguo.github.io/safari-pinned-tab.svg">
+<link rel="icon" href="http://localhost:1313/favicon.ico">
+<link rel="icon" type="image/png" sizes="16x16" href="http://localhost:1313/favicon-16x16.png">
+<link rel="icon" type="image/png" sizes="32x32" href="http://localhost:1313/favicon-32x32.png">
+<link rel="apple-touch-icon" href="http://localhost:1313/apple-touch-icon.png">
+<link rel="mask-icon" href="http://localhost:1313/safari-pinned-tab.svg">
 <meta name="theme-color" content="#2e2e33">
 <meta name="msapplication-TileColor" content="#2e2e33">
-<link rel="alternate" hreflang="en" href="https://chaohongguo.github.io/posts/my-second-post/">
+<link rel="alternate" hreflang="en" href="http://localhost:1313/posts/my-second-post/">
 <noscript>
     <style>
         #theme-toggle,
@@ -70,7 +70,24 @@
         document.querySelector("html").dataset.theme = 'light';
     }
 
-</script><meta property="og:url" content="https://chaohongguo.github.io/posts/my-second-post/">
+</script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" crossorigin="anonymous">
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js" crossorigin="anonymous"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js" crossorigin="anonymous" onload="renderMathInElement(document.body);"></script>
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    renderMathInElement(document.body, {
+      delimiters: [
+        {left: '$$', right: '$$', display: true},
+        {left: '$', right: '$', display: false},
+        {left: '\\(', right: '\\)', display: false},
+        {left: '\\[', right: '\\]', display: true}
+      ],
+      throwOnError : false
+    });
+  });
+</script>
+<meta property="og:url" content="http://localhost:1313/posts/my-second-post/">
   <meta property="og:site_name" content="我的个人博客">
   <meta property="og:title" content="AAA">
   <meta property="og:description" content="1. Transformer 的核心：缩放点积注意力机制 (Scaled Dot-Product Attention)">
@@ -93,13 +110,13 @@
       "@type": "ListItem",
       "position":  1 ,
       "name": "Posts",
-      "item": "https://chaohongguo.github.io/posts/"
+      "item": "http://localhost:1313/posts/"
     }, 
     {
       "@type": "ListItem",
       "position":  2 ,
       "name": "AAA",
-      "item": "https://chaohongguo.github.io/posts/my-second-post/"
+      "item": "http://localhost:1313/posts/my-second-post/"
     }
   ]
 }
@@ -125,14 +142,14 @@
   },
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://chaohongguo.github.io/posts/my-second-post/"
+    "@id": "http://localhost:1313/posts/my-second-post/"
   },
   "publisher": {
     "@type": "Organization",
     "name": "我的个人博客",
     "logo": {
       "@type": "ImageObject",
-      "url": "https://chaohongguo.github.io/favicon.ico"
+      "url": "http://localhost:1313/favicon.ico"
     }
   }
 }
@@ -142,7 +159,7 @@
     <header class="header">
     <nav class="nav">
         <div class="logo">
-            <a href="https://chaohongguo.github.io/" accesskey="h" title="我的个人博客 (Alt + H)">我的个人博客</a>
+            <a href="http://localhost:1313/" accesskey="h" title="我的个人博客 (Alt + H)">我的个人博客</a>
             <div class="logo-switches">
                 <button id="theme-toggle" accesskey="t" title="(Alt + T)" aria-label="Toggle theme">
                     <svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="18" viewBox="0 0 24 24"
@@ -167,6 +184,16 @@
             </div>
         </div>
         <ul id="menu">
+            <li>
+                <a href="http://localhost:1313/about/" title="About">
+                    <span>About</span>
+                </a>
+            </li>
+            <li>
+                <a href="http://localhost:1313/publications/" title="Publications">
+                    <span>Publications</span>
+                </a>
+            </li>
         </ul>
     </nav>
 </header>
@@ -195,7 +222,7 @@
     </main>
     
 <footer class="footer">
-        <span>&copy; 2026 <a href="https://chaohongguo.github.io/">我的个人博客</a></span> · 
+        <span>&copy; 2026 <a href="http://localhost:1313/">我的个人博客</a></span> · 
 
     <span>
         Powered by
